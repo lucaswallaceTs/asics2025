@@ -848,8 +848,8 @@ footer p {
     }
 
     .container-percurso {
-        width: calc(100% - 32px);
-        padding: 32px 16px;
+        width: 100%;
+        padding: 32px 0px 0px 0px;
         flex-direction: column-reverse;
     }
 
@@ -861,21 +861,18 @@ footer p {
     .percurso-info {
         width: 100%;
         padding: 0px;
+        margin-left: 16px;
     }
 
     .percurso-info h1 {
         font-size: 24px;
     }
 
-    .button-percurso {
-        flex-direction: column;
-    }
-
     .container-kit {
         flex-wrap: wrap;
         padding: 0;
-        width: calc(100% - 32px);
-        padding: 32px 16px;
+        width: 100%;
+        padding: 32px 0px 0px 0px;
     }
 
     .wrapper-pelotao .box-pelotao {
@@ -891,11 +888,10 @@ footer p {
         width: 100%;
     }
 
-    .button-percurso .kit-2 {
-        margin: 16px 0px;
-    }
-
-
+.container-grupos{
+    width: calc(100% - 32px);
+    padding: 0px 16px;
+}
     .container-descontos {
         width: calc(100% - 32px);
         padding: 32px 16px;
