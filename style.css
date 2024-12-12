@@ -15,6 +15,10 @@ button {
 
 .scrolled {
     background-color: #FFF;
+    color: #000;
+}
+.scrolled a{
+    color: #000 !important;
 }
 
 header {
@@ -33,13 +37,13 @@ header nav {
     justify-content: center;
     align-items: center;
     position: fixed;
-    color: #000000;
+    color: #FFF;
     top: 0;
     z-index: 10;
 }
 
 header nav a {
-    color: #000000;
+    color: #FFF;
     text-decoration: none;
     margin-right: 24px;
 }
@@ -638,7 +642,7 @@ footer {
     border: 1px solid #F3EFEB;
     background-size: contain;
     color: #000000;
-    margin: 48px 0px;
+    margin: 0px 0px 48px 0px;
     background-repeat: no-repeat;
     background-image: url(https://cdn.ticketsports.com.br/ticketagora/site/AsicsRun-2025/image-rodape.jpg);
 }
