@@ -43,13 +43,13 @@
   <body>
     <header>
       <nav>
+        <a href="#Inicio">INÍCIO</a>
         <a href="#Sobre">SOBRE</a>
-        <a href="#Percurso">PERCURSO</a>
-        <a href="#Kit">KIT</a>
-        <a href="#Treino">TREINO</a>
+        <a href="#Percurso">PERCURSOS</a>
+        <a href="#Kit">KITS</a>
+        <a href="#Pelotao">PELOTÃO</a>
+        <a href="#Grupos">GRUPOS E ASSESSORIAS</a>
         <a href="#Regulamento">REGULAMENTO</a>
-        <a href="#Duvidas">DÚVIDAS FREQUENTES</a>
-        <a href="#FAQ">FAQ</a>
       </nav>
       <div class="hamburger-container">
         <button class="hamburger">
@@ -63,19 +63,18 @@
       <div class="modal" id="modal">
         <div class="modal-content">
           <strong>MENU</strong>
-          <a href="#Inicio">INICIO </a>
+          <a href="#Inicio">INÍCIO</a>
           <a href="#Sobre">SOBRE</a>
-          <a href="#Percurso">PERCURSO</a>
-          <a href="#Kit">KIT</a>
-          <a href="#Treino">TREINO</a>
+          <a href="#Percurso">PERCURSOs</a>
+          <a href="#Kit">KITS</a>
+          <a href="#Pelotao">PELOTÃO</a>
+          <a href="#Grupos">GRUPOS E ASSESSORIAS</a>
           <a href="#Regulamento">REGULAMENTO</a>
-          <a href="#Duvidas">DÚVIDAS FREQUENTES</a>
-          <a href="#FAQ">FAQ</a>
         </div>
       </div>
     </header>
     <div class="section-inicio" id="Inicio"></div>
-    <div class="container-accountant">
+    <div class="container-accountant" id="Inicio">
       <div class="background-countdown">
         <img
           src="https://cdn.ticketsports.com.br/ticketagora/site/AsicsRun-2025/image-inicial.png"
@@ -157,7 +156,8 @@
         />
       </div>
       <div class="percurso-info">
-        <h1>DESCUBRA SEU CORRE. CONHEÇA OS PERCURSOS</h1>
+        <h1 style="margin-bottom: 4px;">ASICS GOLDEN RUN.</h1>
+        <h1 style="margin-top: 4px;">CONHEÇA OS PERCURSOS.</h1>
         <div class="button-percurso percursos">
           <div class="mapa5k button-selected">5K</div>
           <div class="mapa10k">10K</div>
@@ -166,10 +166,25 @@
     </div>
     <div class="container-kit" id="Kit">
       <div class="percurso-info info-kit">
-        <h1>KITS</h1>
+        <div class="kit-gold">
+          <h1>KIT GOLD</h1>
+          <p>- Camiseta</p>
+          <p>- Porta Tênis</p>
+          <p>- Viseira</p>
+          <p>- N° de Peito</p>
+          <p>- Medalha Finisher</p>
+        </div>
+        <div class="kit-run">
+          <h1>KIT RUN</h1>
+          <p>- Camiseta</p>
+          <p>- Porta Tênis</p>
+          <p>- N° de Peito</p>
+          <p>- Medalha Finisher</p>
+
+        </div>
         <div class="button-percurso">
-          <div class="kit-1 kit-selected">KIT RUN</div>
-          <div class="kit-2">KIT GOLD</div>
+          <div class="kit-1">KIT RUN</div>
+          <div class="kit-2 kit-selected">KIT GOLD</div>
         </div>
       </div>
       <div class="image-mapa">
@@ -180,7 +195,7 @@
         />
       </div>
     </div>
-    <div class="container-pelotao">
+    <div class="container-pelotao" id="Pelotao">
       <h2>PELOTÃO</h2>
       <p>
         No momento da inscrição, o atleta deverá selecionar o pelotão mais
@@ -226,7 +241,7 @@
         </div>
       </div>
     </div>
-    <div class="container-grupos">
+    <div class="container-grupos" id="Grupos">
       <h1>GRUPOS E ASSESSORIAS</h1>
       <p>
         Consulte os benefícios especiais para: assessorias, empresas e clubes.
@@ -1051,6 +1066,8 @@
         const mapa10k = document.querySelector(".mapa10k");
         const kit1 = document.querySelector(".kit-1");
         const kit2 = document.querySelector(".kit-2");
+        const kitGold = document.querySelector(".kit-gold");
+        const kitRun = document.querySelector(".kit-run");
 
         mapa5k.addEventListener("click", function () {
           imgtKit.src =
@@ -1070,16 +1087,20 @@
         kit1.addEventListener("click", function () {
           imgMapa.src =
             "https://cdn.ticketsports.com.br/ticketagora/site/AsicsRun-2025/kit-provisorio.jpg";
-          imgMapa.alt = "Imagem Kit Centauro";
+          imgMapa.alt = "Imagem Kit Gold Asics";
           kit1.classList.add("kit-selected");
           kit2.classList.remove("kit-selected");
+          kitRun.style.display = "block";
+          kitGold.style.display = "none";
         });
         kit2.addEventListener("click", function () {
           imgMapa.src =
             "https://cdn.ticketsports.com.br/ticketagora/site/AsicsRun-2025/kit-provisorio.jpg";
-          imgMapa.alt = "Imagem Kit Centauro";
+          imgMapa.alt = "Imagem Kit Run Asics";
           kit2.classList.add("kit-selected");
           kit1.classList.remove("kit-selected");
+          kitGold.style.display = "block";
+          kitRun.style.display = "none";
         });
       });
     </script>

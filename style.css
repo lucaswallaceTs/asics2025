@@ -348,7 +348,7 @@ nav a img {
 }
 
 .percurso-info {
-    width: calc(50% - 112px);
+    width: calc(50% - 100px);
     max-width: 600px;
     padding: 0px;
     margin-left: 56px;
@@ -420,7 +420,15 @@ nav a img {
 .kit-selected {
     background-color: #2A9C88;
 }
-
+.kit-run{
+    display: none;
+}
+.kit-gold h1{
+    margin: 8px 0px;
+}
+.kit-run h1{
+    margin: 8px 0px;
+}
 .container-pelotao {
     display: flex;
     flex-direction: column;
@@ -869,6 +877,7 @@ footer p {
         width: calc(100% - 32px);
         padding: 32px 16px;
     }
+
 
     .container-kit .image-mapa {
         margin-top: 24px;
