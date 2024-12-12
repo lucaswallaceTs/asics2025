@@ -878,7 +878,14 @@ footer p {
         padding: 32px 16px;
     }
 
-
+    .wrapper-pelotao .box-pelotao {
+        width: calc(100% - 32px);
+        margin: 40px auto auto auto;
+    }
+    .wrapper-pelotao-mini .box-pelotao-mini {
+        width: calc(100% - 32px);
+        margin: 40px auto auto auto;
+    }
     .container-kit .image-mapa {
         margin-top: 24px;
         width: 100%;
