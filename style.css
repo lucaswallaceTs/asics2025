@@ -1,0 +1,1019 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.scrolled {
+    background-color: #FFF;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+header nav {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    padding: 22px 0px 22px 0px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: #000000;
+    top: 0;
+    z-index: 10;
+}
+
+header nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+nav a img {
+    width: 300px;
+}
+
+.hamburger-container {
+    position: fixed;
+    display: none !important;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 16px 16px 0px;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #000000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 30% auto;
+    padding: 16px 24px 24px 24px;
+    border-radius: 16px;
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content strong {
+    margin-bottom: 13px;
+}
+
+.modal-content a {
+    text-decoration: none;
+    color: #222222;
+    margin: 8px 0px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 21px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section-inicio {
+    background: url(https://cdn.ticketsports.com.br/ticketagora/site/AsicsRun-2025/image-inicial.jpg);
+    width: 100%;
+    max-width: 1440px;
+    background-size: cover;
+    height: 780px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-inicio {
+    width: 100%;
+    max-width: 1440px;
+    position: absolute;
+    height: 650px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 49.54%, rgba(0, 0, 0, 0) 100%);
+}
+
+.title-event {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    z-index: 1;
+    align-items: center;
+}
+
+.title-event h1 {
+    font-size: 56px;
+    color: #FFF;
+    margin: 16px 0px 16px 0px;
+}
+
+.title-event p {
+    color: #FFF;
+    font-size: 24px;
+    margin: 0px 0px 37px 0px;
+}
+
+.title-event button {
+    width: 240px;
+    height: 64px;
+    padding: 12px 40px 12px 40px;
+    border-radius: 8px;
+    color: #FFF;
+    border: none;
+    background-color: #E30000;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+.title-event .desbrava-mobile {
+    display: none;
+}
+
+.container-accountant {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    position: relative;
+}
+
+.background-countdown {
+    position: absolute;
+    left: 0;
+}
+
+.accountant {
+    width: 45%;
+    text-align: center;
+    margin: 80px 0px 83px 0px;
+}
+
+.accountant h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0px 0px 32px 0px;
+}
+
+.countdown {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.countdown strong {
+    font-size: 65px;
+    margin-top: -100px;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+    font-size: 56px;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-weight: 600;
+}
+
+.countdown-date {
+    font-size: 20px;
+    font-family: "League Gothic", sans-serif;
+    color: #2A9C88;
+    margin: 16px 0px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.accountant .btn-asics-inscreva button {
+    width: 262px;
+    height: 56px;
+    background-color: #2A9C88;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    margin-top: 16px;
+}
+
+.container-sobre {
+    display: flex;
+    max-width: 1200px;
+    background: #F3EFEB;
+    color: #000000;
+    justify-content: space-between;
+}
+
+.sobre-text {
+    width: calc(50% - 128px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 64px;
+}
+
+.info-ritual {
+    display: block;
+}
+
+.info-ritual-mobile {
+    display: none;
+}
+
+.sobre-text .seta-inscreva {
+    color: #2A9C88;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 26px;
+}
+
+.sobre-text .seta-inscreva img {
+    margin-left: 16px;
+}
+
+.sobre-text h1 {
+    color: #000000;
+    margin: 0;
+    font-size: 48px;
+}
+
+.sobre-text p {
+    color: #000000;
+    margin: 24px 0px 0px 0px;
+}
+
+.sobre-text a button {
+    border: none;
+    border-radius: 8px;
+    color: #FFF;
+    width: 182px;
+    padding: 18px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #E30000;
+    box-shadow: 0px 1px 12px 0px #0000007A;
+    font-family: "Rubik", sans-serif;
+    margin-top: 32px;
+    position: relative;
+    z-index: 10;
+}
+
+.image-sobre {
+    width: 616px;
+    height: 616px;
+}
+
+.image-sobre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-percurso {
+    background: #F3EFEB;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.container-percurso .image-mapa {
+    width: 600px;
+    height: 650px;
+}
+
+.image-mapa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.percurso-info {
+    width: calc(50% - 112px);
+    max-width: 600px;
+    padding: 0px;
+    margin-left: 56px;
+}
+
+.percurso-info h1 {
+    font-size: 48px;
+}
+
+.button-percurso {
+    display: flex;
+    margin-top: 24px;
+}
+
+.info-kit {
+    padding: 0px 62px 0px 0px;
+}
+
+.mapa5k,
+.mapa10k {
+    width: 82px;
+    height: 56px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #79C2B5;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.button-selected {
+    background-color: #2A9C88;
+}
+
+.container-kit {
+    background-color: #F3EFEB;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.container-kit .image-mapa {
+    width: 600px;
+    height: 650px;
+}
+
+.kit-1,
+.kit-2,
+.kit-3 {
+    padding: 0px 12px;
+    font-size: 24px;
+    font-weight: 700;
+    height: 56px;
+    background-color: #79C2B5;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.kit-selected {
+    background-color: #2A9C88;
+}
+
+.container-pelotao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto auto auto;
+}
+
+.container-pelotao h2 {
+    font-size: 40px;
+    margin: 0px 0px 8px 0px;
+    font-weight: 900;
+}
+
+.container-pelotao p {
+    margin: 0px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 718px;
+    text-align: center;
+}
+
+.wrapper-pelotao {
+    display: flex;
+    margin: auto;
+}
+
+.wrapper-pelotao .box-pelotao {
+    width: 356px;
+    height: 230px;
+    background-color: #E8CB7E;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.wrapper-pelotao .box-pelotao h4 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.wrapper-pelotao .box-pelotao p {
+    margin: 16px 0px;
+    width: 187px;
+    font-size: 18px;
+}
+
+.wrapper-pelotao .box-pelotao strong {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.wrapper-pelotao-mini {
+    display: flex;
+    margin: auto;
+}
+
+.wrapper-pelotao-mini .box-pelotao-mini {
+    width: 235px;
+    height: 230px;
+    background-color: #E8CB7E;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.wrapper-pelotao-mini .box-pelotao-mini h4 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.wrapper-pelotao-mini .box-pelotao-mini p {
+    margin: 16px 0px;
+    width: 187px;
+    font-size: 18px;
+}
+
+.wrapper-pelotao-mini .box-pelotao-mini strong {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.container-grupos {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #F3EFEB;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.container-grupos h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 77px;
+}
+
+.container-grupos p {
+    margin: 0px;
+}
+
+.container-grupos button {
+    width: 262px;
+    height: 56px;
+    border: none;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: #2A9C88;
+    color: #FFF;
+    margin: 32px 0px 77px 0px;
+}
+
+.container-regulamento {
+    width: 100%;
+    max-width: 1200px;
+    padding: 56px 71px;
+}
+
+.regulamento h2 {
+    background-color: #E8CB7E;
+    color: #000000;
+    padding: 12px 0px 8px 56px;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.text-regulamento {
+    background-color: #FFF;
+    max-height: 404px;
+    padding: 40px;
+    overflow-y: scroll;
+    border: 1px solid #E9E0D8;
+}
+
+.text-frequentes {
+    border-radius: 0px 0px 16px 16px;
+    background-color: #F3F3F3;
+    padding: 40px;
+}
+
+.text-regulamento::-webkit-scrollbar {
+    width: 11px;
+}
+
+.text-regulamento::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.text-regulamento::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 100px;
+    border: 1px solid #f1f1f1;
+}
+
+.text-frequentes details {
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.text-frequentes summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+summary h3 {
+    font-size: 24px;
+    display: inline-block;
+}
+
+details[open] .arrow {
+    transform: rotate(180deg);
+}
+
+.faq {
+    width: 100%;
+    max-width: 1200px;
+    padding: 24px 0px;
+    background-color: #E8CB7E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq a button {
+    border: none;
+    color: #FFF;
+    width: 262px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #2A9C88;
+    font-family: "Inter", sans-serif;
+}
+
+footer {
+    width: 100%;
+    max-width: 1200px;
+    height: 504px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    background-position-y: bottom;
+    border: 1px solid #F3EFEB;
+    background-size: contain;
+    color: #000000;
+    margin: 48px 0px;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.ticketsports.com.br/ticketagora/site/AsicsRun-2025/image-rodape.jpg);
+}
+
+footer h2 {
+    font-size: 32px;
+    margin: 80px 0px 16px 0px;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.logo-footer {
+    margin: 24px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    justify-content: space-between;
+}
+
+.logo-apoiador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.ticket img {
+    margin-bottom: 26px;
+}
+
+.ticket {
+    padding: 32px 0px 24px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    font-size: 14px;
+}
+
+.ticket p {
+    font-size: 14px;
+}
+
+.ticket a {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+.site-spoint {
+    text-decoration: none;
+    color: #000000;
+}
+
+.link-spoint {
+    text-decoration: underline;
+}
+
+.text-nike {
+    margin-bottom: -9px;
+}
+
+.nike {
+    width: 150px;
+}
+
+.centauro {
+    width: 220px;
+}
+
+.apoiador {
+    width: 120px;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    .logo-footer hr {
+        display: none;
+    }
+
+    .logo-apoiador {
+        flex-direction: column;
+    }
+
+    header nav a:first-child {
+        margin-left: 24px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger-container {
+        display: flex !important;
+    }
+
+    .title-event {
+        padding: 0px 16px;
+    }
+
+    .title-event h1 {
+        font-size: 28px;
+        color: #FFF;
+        margin: 0px 0px 32px 0px;
+    }
+
+    .title-event .desbrava-mobile {
+        display: flex;
+        font-size: 28px;
+        max-width: 300px;
+    }
+
+    .title-event .desbrava-mobile img {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .accountant {
+        width: 100%;
+        margin: 32px 0px;
+    }
+
+    .countdown {
+        max-width: 350px;
+    }
+
+    .countdown strong {
+        font-size: 45px;
+        margin-top: -40px;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .countdown-date {
+        font-size: 12px;
+        margin: 4px 0px 0px 0px;
+        line-height: 14px;
+    }
+
+    .background-countdown {
+        display: none;
+    }
+
+    .container-sobre {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-text {
+        width: calc(100% - 32px);
+        padding: 0px 16px 32px 16px;
+    }
+
+    .sobre-text h1 {
+        font-size: 24px;
+    }
+
+    .sobre-text p {
+        font-size: 16px;
+    }
+
+    .container-sobre .image-sobre {
+        width: 100%;
+        height: 328px;
+        display: flex;
+    }
+
+    .container-sobre .image-sobre img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .info-ritual {
+        display: none;
+    }
+
+    .info-ritual-mobile {
+        display: flex;
+    }
+
+    .container-percurso {
+        width: calc(100% - 32px);
+        padding: 32px 16px;
+        flex-direction: column-reverse;
+    }
+
+    .container-percurso .image-mapa {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .percurso-info {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .percurso-info h1 {
+        font-size: 24px;
+    }
+
+    .button-percurso {
+        flex-direction: column;
+    }
+
+    .container-kit {
+        flex-wrap: wrap;
+        padding: 0;
+        width: calc(100% - 32px);
+        padding: 32px 16px;
+    }
+
+    .container-kit .image-mapa {
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .button-percurso .kit-2 {
+        margin: 16px 0px;
+    }
+
+
+    .container-descontos {
+        width: calc(100% - 32px);
+        padding: 32px 16px;
+    }
+
+    .container-descontos h1 {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .descontos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .wrapper-pelotao {
+        flex-wrap: wrap;
+    }
+
+    .wrapper-pelotao-mini {
+        flex-wrap: wrap;
+    }
+
+    .container-regulamento {
+        padding: 0;
+        height: 380px;
+    }
+
+    .text-regulamento {
+        padding: 16px 0px 16px 16px;
+    }
+
+    .text-regulamento p {
+        margin: 0;
+    }
+
+    .text-regulamento .content {
+        height: 285px;
+        overflow-y: scroll;
+    }
+
+    .text-regulamento .wrapper-regulamento .content::-webkit-scrollbar {
+        width: 11px;
+    }
+
+    .text-regulamento .wrapper-regulamento .content::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+    .text-regulamento .wrapper-regulamento .content::-webkit-scrollbar-thumb {
+        background-color: #000;
+        border-radius: 100px;
+        border: 1px solid #f1f1f1;
+    }
+
+    .duvidas {
+        height: fit-content;
+    }
+
+    .image-descontos {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .image-descontos .logo-desconto-centauro,
+    .logo-desconto-nike,
+    .logo-desconto-spoint {
+        width: 64px;
+        height: 64px;
+    }
+
+    .image-descontos img {
+        width: 80%;
+    }
+
+    .image-descontos .text-descontos {
+        margin-left: 16px;
+        width: 75%;
+        text-align: left;
+    }
+
+    .regulamento h2 {
+        border-radius: 0;
+        padding: 23px 0px 23px 16px;
+        font-size: 24px;
+    }
+
+    .text-frequentes {
+        padding: 16px 16px 10px 16px;
+    }
+
+    .spoint {
+        width: 70% !important;
+    }
+
+    footer p {
+        padding: 0px 16px;
+    }
+
+    .logo-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo-apoiador {
+        flex-direction: column;
+    }
+
+    .logo-footer .nike {
+        margin-top: 0px;
+        max-width: 173px;
+    }
+
+    .logo-footer img {
+        width: 80%;
+    }
+
+    .ticket {
+        width: calc(100% - 32px);
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .scrolled-mobile {
+        background-color: #FFF;
+    }
+
+    .text-nike {
+        margin: 0px 0px -10px 0px;
+        padding: 0;
+    }
+
+    .percursos {
+        flex-direction: row !important;
+    }
+}
