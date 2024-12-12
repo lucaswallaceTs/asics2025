@@ -734,6 +734,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    .section-inicio{
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    
     header nav {
         display: none;
     }
@@ -752,6 +758,9 @@ footer p {
 
     .hamburger {
         display: block;
+    }
+    .hamburguer img{
+        stroke: #000000;
     }
 
     .hamburger-container {
@@ -856,6 +865,7 @@ footer p {
     .container-percurso .image-mapa {
         width: 100%;
         margin-top: 24px;
+        height: 100%;
     }
 
     .percurso-info {
@@ -886,6 +896,11 @@ footer p {
     .container-kit .image-mapa {
         margin-top: 24px;
         width: 100%;
+        height: 100% !important;
+    }
+    .container-kit .image-mapa img {
+        width: 100%;
+        height: 350px;
     }
 
 .container-grupos{
