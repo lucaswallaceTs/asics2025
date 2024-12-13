@@ -96,16 +96,21 @@ nav a img {
     flex-direction: column;
 }
 
-.modal-content strong {
-    margin-bottom: 13px;
-}
-
 .modal-content a {
     text-decoration: none;
     color: #222222;
     margin: 8px 0px;
 }
-
+.modal-content .title-modal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.modal-content .title-modal span{ 
+    font-size: 18px;
+}
 .close {
     color: #aaa;
     float: right;
@@ -114,7 +119,6 @@ nav a img {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 21px;
 }
 
 .close:hover,
@@ -423,6 +427,12 @@ nav a img {
 .kit-run{
     display: none;
 }
+.kit-run{
+    height: 250px;
+}
+.kit-gold{
+    height: 250px;
+}
 .kit-gold h1{
     margin: 8px 0px;
 }
@@ -641,6 +651,7 @@ details[open] .arrow {
 footer {
     width: 100%;
     max-width: 1200px;
+    box-sizing: border-box;
     height: 504px;
     display: flex;
     flex-direction: column;
@@ -855,21 +866,28 @@ footer p {
     .info-ritual-mobile {
         display: flex;
     }
-
+    .kit-gold{
+        height: 200px;
+    }
+    .kit-run{
+        height: 200px;
+    }
     .container-percurso {
         width: 100%;
         padding: 32px 0px 0px 0px;
         flex-direction: column-reverse;
+        margin-top: 32px;
     }
 
     .container-percurso .image-mapa {
         width: 100%;
         margin-top: 24px;
         height: 100%;
+        display: flex;
     }
 
     .percurso-info {
-        width: 100%;
+        width: calc(100% - 16px);
         padding: 0px;
         margin-left: 16px;
     }
@@ -883,6 +901,7 @@ footer p {
         padding: 0;
         width: 100%;
         padding: 32px 0px 0px 0px;
+        margin-top: 32px;
     }
 
     .wrapper-pelotao .box-pelotao {
@@ -897,6 +916,7 @@ footer p {
         margin-top: 24px;
         width: 100%;
         height: 100% !important;
+        display: flex;
     }
     .container-kit .image-mapa img {
         width: 100%;
